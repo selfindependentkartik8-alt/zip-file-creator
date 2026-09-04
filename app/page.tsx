@@ -562,67 +562,167 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* ========================================================= */}
+{/* FOOTER */}
+{/* ========================================================= */}
 
-      {/* ========================================================= */}
-      {/* FOOTER */}
-      {/* ========================================================= */}
+<footer className="relative z-10 border-t border-white/5 px-5 py-10">
 
-      <footer className="relative z-10 border-t border-white/5 px-5 py-10">
+  {/* ========================================================= */}
+  {/* RELATED TOOLS */}
+  {/* ========================================================= */}
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-7 sm:flex-row">
+  <div className="mx-auto max-w-6xl">
 
-          {/* Brand */}
+    <div className="mb-8 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400/70">
+        Explore More
+      </p>
 
-          <div className="flex items-center gap-3">
+      <h3 className="mt-2 text-xl font-semibold text-white">
+        More File & Utility Tools
+      </h3>
 
-            <img
-              src="/logo.png"
-              alt="KrishAIWorks Logo"
-              className="h-12 w-12 rounded-full border border-amber-400/20 object-cover shadow-lg shadow-amber-500/10"
-            />
+      <p className="mt-2 text-sm text-zinc-500">
+        Explore more useful tools from KrishAIWorks.
+      </p>
+    </div>
 
-            <div>
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
-              <p className="font-semibold text-white">
-                KrishAIWorks
-              </p>
-
-              <p className="mt-1 text-xs text-zinc-600">
-                AI Solutions That Work
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* Instagram */}
-
-          <a
-            href="https://instagram.com/KrishAIWorks"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-zinc-500 transition hover:text-amber-400"
-          >
-            Instagram · @KrishAIWorks
-          </a>
-
-          {/* Copyright */}
-
-          <div className="text-center sm:text-right">
-
-            <p className="text-xs text-zinc-600">
-              © 2026 KrishAIWorks
-            </p>
-
-            <p className="mt-1 text-xs text-zinc-700">
-              Built with AI.
-            </p>
-
-          </div>
-
+      {/* PDF Compressor */}
+      <a
+        href="https://pdfcompressor.krishaiworks.com/"
+        className="group rounded-2xl border border-amber-400/10 bg-white/[0.02] p-5 transition hover:border-amber-400/30 hover:bg-amber-400/[0.04]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-lg">
+          📄
         </div>
 
-      </footer>
+        <h4 className="font-semibold text-white transition group-hover:text-amber-400">
+          PDF Compressor
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Compress PDF files quickly while keeping their quality.
+        </p>
+      </a>
+
+      {/* Image Resizer & Compressor */}
+      <a
+        href="https://imageresizercompressor.krishaiworks.com/"
+        className="group rounded-2xl border border-amber-400/10 bg-white/[0.02] p-5 transition hover:border-amber-400/30 hover:bg-amber-400/[0.04]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-lg">
+          🖼️
+        </div>
+
+        <h4 className="font-semibold text-white transition group-hover:text-amber-400">
+          Image Resizer & Compressor
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Resize and compress images quickly for easier sharing.
+        </p>
+      </a>
+
+      {/* QR Code Generator & Scanner */}
+      <a
+        href="https://qrcodegeneratorscanner.krishaiworks.com/"
+        className="group rounded-2xl border border-amber-400/10 bg-white/[0.02] p-5 transition hover:border-amber-400/30 hover:bg-amber-400/[0.04]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-lg">
+          🔳
+        </div>
+
+        <h4 className="font-semibold text-white transition group-hover:text-amber-400">
+          QR Code Generator & Scanner
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Create and scan QR codes instantly with ease.
+        </p>
+      </a>
+
+      {/* Password Generator */}
+      <a
+        href="https://passwordgenerator.krishaiworks.com/"
+        className="group rounded-2xl border border-amber-400/10 bg-white/[0.02] p-5 transition hover:border-amber-400/30 hover:bg-amber-400/[0.04]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-lg">
+          🔐
+        </div>
+
+        <h4 className="font-semibold text-white transition group-hover:text-amber-400">
+          Password Generator
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Generate strong and secure passwords in seconds.
+        </p>
+      </a>
+
+    </div>
+  </div>
+
+  {/* ========================================================= */}
+  {/* ORIGINAL FOOTER */}
+  {/* ========================================================= */}
+
+  <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-7 border-t border-white/5 pt-10 sm:flex-row">
+
+    {/* Brand */}
+
+    <div className="flex items-center gap-3">
+
+      <img
+        src="/logo.png"
+        alt="KrishAIWorks Logo"
+        className="h-12 w-12 rounded-full border border-amber-400/20 object-cover shadow-lg shadow-amber-500/10"
+      />
+
+      <div>
+
+        <p className="font-semibold text-white">
+          KrishAIWorks
+        </p>
+
+        <p className="mt-1 text-xs text-zinc-600">
+          AI Solutions That Work
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* Instagram */}
+
+    <a
+      href="https://instagram.com/KrishAIWorks"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm text-zinc-500 transition hover:text-amber-400"
+    >
+      Instagram · @KrishAIWorks
+    </a>
+
+    {/* Copyright */}
+
+    <div className="text-center sm:text-right">
+
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks
+      </p>
+
+      <p className="mt-1 text-xs text-zinc-700">
+        Built with AI.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
     </main>
   );
