@@ -70,6 +70,70 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://krishaiworks.com/#organization",
+      name: "KrishAIWorks",
+      url: "https://krishaiworks.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://krishaiworks.com/logo.png",
+        width: 512,
+        height: 512,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://krishaiworks.com/#website",
+      url: "https://krishaiworks.com",
+      name: "KrishAIWorks",
+      description:
+        "AI-powered tools, productivity utilities, automation, chatbots, websites and custom digital solutions.",
+      publisher: {
+        "@id": "https://krishaiworks.com/#organization",
+      },
+      inLanguage: "en",
+    },
+    {
+      "@type": "WebApplication",
+      "@id":
+        "https://zipfilecreator.krishaiworks.com/#webapplication",
+      name: "ZIP File Creator",
+      url: "https://zipfilecreator.krishaiworks.com/",
+      description:
+        "Create ZIP files online quickly and easily with the free ZIP File Creator by KrishAIWorks. Compress and download multiple files as a single ZIP archive.",
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Any",
+      browserRequirements: "Requires a modern web browser.",
+      isPartOf: {
+        "@id": "https://krishaiworks.com/#website",
+      },
+      publisher: {
+        "@id": "https://krishaiworks.com/#organization",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://zipfilecreator.krishaiworks.com/#webpage",
+      url: "https://zipfilecreator.krishaiworks.com/",
+      name: "ZIP File Creator | Create ZIP Files Online",
+      description:
+        "Create ZIP files online quickly and easily with the free ZIP File Creator by KrishAIWorks. Compress and download multiple files as a single ZIP archive.",
+      isPartOf: {
+        "@id": "https://krishaiworks.com/#website",
+      },
+      about: {
+        "@id":
+          "https://zipfilecreator.krishaiworks.com/#webapplication",
+      },
+      inLanguage: "en",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +143,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+
+        <script
+          id="zip-file-creator-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BS6TSMM1ZR"
