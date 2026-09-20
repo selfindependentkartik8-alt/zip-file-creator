@@ -665,37 +665,39 @@ export default function Home() {
     </div>
   </div>
 
-  {/* ========================================================= */}
-  {/* ORIGINAL FOOTER */}
-  {/* ========================================================= */}
+ {/* ========================================================= */}
+{/* ORIGINAL FOOTER */}
+{/* ========================================================= */}
 
-  <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-7 border-t border-white/5 pt-10 sm:flex-row">
+<div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-7 border-t border-white/5 pt-10 sm:flex-row">
 
-    {/* Brand */}
+  {/* Brand */}
 
-    <div className="flex items-center gap-3">
+  <div className="flex items-center gap-3">
 
-      <img
-        src="/logo.png"
-        alt="KrishAIWorks Logo"
-        className="h-12 w-12 rounded-full border border-amber-400/20 object-cover shadow-lg shadow-amber-500/10"
-      />
+    <img
+      src="/logo.png"
+      alt="KrishAIWorks Logo"
+      className="h-12 w-12 rounded-full border border-amber-400/20 object-cover shadow-lg shadow-amber-500/10"
+    />
 
-      <div>
+    <div>
 
-        <p className="font-semibold text-white">
-          KrishAIWorks
-        </p>
+      <p className="font-semibold text-white">
+        KrishAIWorks
+      </p>
 
-        <p className="mt-1 text-xs text-zinc-600">
-          AI Solutions That Work
-        </p>
-
-      </div>
+      <p className="mt-1 text-xs text-zinc-600">
+        AI Solutions That Work
+      </p>
 
     </div>
 
-    {/* Instagram */}
+  </div>
+
+  {/* Instagram + Legal Links */}
+
+  <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
 
     <a
       href="https://instagram.com/KrishAIWorks"
@@ -706,21 +708,37 @@ export default function Home() {
       Instagram · @KrishAIWorks
     </a>
 
-    {/* Copyright */}
+    <a
+      href="https://krishaiworks.com/privacy-policy"
+      className="text-sm text-zinc-500 transition hover:text-amber-400"
+    >
+      Privacy Policy
+    </a>
 
-    <div className="text-center sm:text-right">
-
-      <p className="text-xs text-zinc-600">
-        © {new Date().getFullYear()} KrishAIWorks
-      </p>
-
-      <p className="mt-1 text-xs text-zinc-700">
-        Built with AI.
-      </p>
-
-    </div>
+    <a
+      href="https://krishaiworks.com/terms-and-conditions"
+      className="text-sm text-zinc-500 transition hover:text-amber-400"
+    >
+      Terms & Conditions
+    </a>
 
   </div>
+
+  {/* Copyright */}
+
+  <div className="text-center sm:text-right">
+
+    <p className="text-xs text-zinc-600">
+      © {new Date().getFullYear()} KrishAIWorks
+    </p>
+
+    <p className="mt-1 text-xs text-zinc-700">
+      Built with AI.
+    </p>
+
+  </div>
+
+</div>
 
 </footer>
 
